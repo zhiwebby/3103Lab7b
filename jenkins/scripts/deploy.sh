@@ -3,7 +3,7 @@
 set -x
 docker stop my-apache-php-app
 docker rm my-apache-php-app
-docker run -d -p 80:80 --name my-apache-php-app -v /home/zhiwebby/Desktop/3103_LabTest/jenkins-php-selenium-test/src:/var/www/html php:7.2-apache
+docker run -d -p 80:80 --name my-apache-php-app -v /home/zhiwebby/3103Lab7b/src:/var/www/html php:7.2-apache
 sleep 1
 set +x
 
